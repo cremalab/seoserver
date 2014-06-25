@@ -1,15 +1,16 @@
 ### Welcome!
-Seo Server is a command line tool that runs a server that allows GoogleBot (and any other crawlers) to crawl your heavily Javascript built websites. The tool works with very little changes to your server or client side code.
+Seo Server is a command line tool that runs a server that allows GoogleBot (and any other crawlers) to crawl your heavily Javascript built websites. The tool works with very little changes to your server or client side code. 
+
+This fork uses [memjs](https://github.com/alevy/memjs#configuration) instead of memcached for its SASL authentication support. It is configured to be run on Heroku. It also ignores external heartbeat requests and responses from PubNub when checking to see if all requests have been fulfilled.
 
 
 ### Getting started
-* Edit configuration file `src/config.coffee.sample` and save it as
-`src/config.coffee`
+* Add environment variables for `HOST_URL` and the configuration variables listed on the [memjs README](https://github.com/alevy/memjs#configuration)
 * Install npm dependencies <br/>
 <code>npm install</code>
 * Install PhantomJS <br/>
 <code>npm install -g phantomjs</code>
-* Start the main process on port 10300 and with default memcached conf:<br/>
+* Start the main process on port 10300:<br/>
 <code>bin/seoserver start -p 10300</code>
 
 

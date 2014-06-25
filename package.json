@@ -9,7 +9,7 @@
     "commander": "~1.0.2",
     "forever-monitor": "~1.1.0",
     "express": "~3.0.0rc4",
-    "memcached": "0.1.5",
+    "memjs": "~0.8.4",
     "node-logentries": "0.0.2",
     "jquery": "1.8.3",
     "underscore": "1.4.4"
@@ -17,7 +17,7 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/moviepilot/seoserver"
+      "url": "https://github.com/cremalab/seoserver.git"
     }
   ]
 }
